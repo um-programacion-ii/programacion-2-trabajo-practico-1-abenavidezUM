@@ -160,6 +160,110 @@ Implementar la clase base `Vehiculo` que servirá como punto de partida para la 
 
 ---
 
+## 👨‍🎓 Alumno
+
+- **Nombre y Apellido:** Agustin Benavidez
+- **Legajo:** 62344
+
+---
+
+## 🚀 Ejecución del Proyecto
+
+### Requisitos Previos
+
+- **Java Development Kit (JDK):** Versión 8 o superior instalada. Puedes verificar tu versión con `java -version` en la terminal.
+- **Git:** Necesario para clonar el repositorio. [https://git-scm.com/](https://git-scm.com/)
+- **IDE (Opcional pero recomendado):** Cualquier IDE de Java como IntelliJ IDEA, Eclipse, VS Code con extensiones de Java.
+
+### Pasos para Compilar y Ejecutar (desde la Terminal)
+
+1.  **Clonar el repositorio (si aún no lo has hecho):**
+    ```bash
+    git clone https://github.com/um-programacion-ii/programacion-2-trabajo-practico-1-abenavidezUM.git
+    ```
+
+2.  **Navegar al directorio del proyecto:**
+    ```bash
+    cd programacion-2-trabajo-practico-1-abenavidezUM
+    ```
+
+3.  **Compilar los archivos Java:**
+    Desde el directorio raíz del proyecto (`programacion-2-trabajo-practico-1-abenavidezUM`), ejecuta:
+    ```bash
+    # Asegúrate de que la estructura de directorios src/main/java exista
+    javac -d . src/main/java/com/gestionvehiculos/*.java
+    ```
+    *Nota: El `-d .` indica que las clases compiladas (`.class`) se guardarán manteniendo la estructura de paquetes a partir del directorio actual.* 
+
+4.  **Ejecutar la clase principal:**
+    ```bash
+    java com.gestionvehiculos.Main
+    ```
+
+### Ejecución desde un IDE
+
+1.  Clona el repositorio o impórtalo como un proyecto existente en tu IDE preferido.
+2.  Asegúrate de que el IDE reconozca la estructura del proyecto (marcando `src/main/java` como la carpeta fuente si es necesario).
+3.  Localiza la clase `com.gestionvehiculos.Main`.
+4.  Haz clic derecho sobre `Main.java` y selecciona la opción "Run" o "Ejecutar".
+
+### Ejemplo de Salida Esperada
+
+La ejecución del programa debería mostrar una salida similar a la siguiente en la consola:
+
+```
+Iniciando sistema de gestión de vehículos (Etapa 5 - ArrayList)...
+Creando y añadiendo vehículos a la flota...
+- Añadido: Vehículo Toyota
+- Añadido: Camión Scania
+- Añadido: Auto Fiat
+- Añadido: Auto Peugeot
+- Añadido: Camión Volvo
+
+...Vehículos añadidos.
+
+--- Imprimiendo información de la Flota Completa ---
+--- Información del Vehículo ---
+Patente: AB123CD
+Marca: Toyota
+Año: 2020
+Capacidad de Carga (Kg): 500.0
+-------------------------------------
+--- Información del Vehículo ---
+Patente: XYZ789
+Marca: Scania
+Año: 2019
+Capacidad de Carga (Kg): 12000.0
+Tiene Acoplado: Sí
+-------------------------------------
+--- Información del Vehículo ---
+Patente: AC345FG
+Marca: Fiat
+Año: 2021
+Capacidad de Carga (Kg): 150.0
+Cantidad de Pasajeros: 5
+-------------------------------------
+--- Información del Vehículo ---
+Patente: BD678HI
+Marca: Peugeot
+Año: 2023
+Capacidad de Carga (Kg): 180.0
+Cantidad de Pasajeros: 4
+-------------------------------------
+--- Información del Vehículo ---
+Patente: UVW456
+Marca: Volvo
+Año: 2021
+Capacidad de Carga (Kg): 10000.0
+Tiene Acoplado: No
+-------------------------------------
+--- Fin de la impresión de la Flota ---
+
+...Finalizando sistema.
+```
+
+---
+
 ## 📝 Licencia
 
 Este trabajo es parte del curso de Programación 2 de Ingeniería en Informática. Uso educativo únicamente.
