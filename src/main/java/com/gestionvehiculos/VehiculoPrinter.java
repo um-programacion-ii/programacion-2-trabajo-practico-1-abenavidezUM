@@ -3,15 +3,16 @@ package com.gestionvehiculos;
 /**
  * Clase responsable de imprimir la información de un Vehiculo.
  * Aplica el Principio de Responsabilidad Única (SRP).
- * Modificado para soportar la impresión específica de Camion (OCP).
+ * Modificado para soportar la impresión específica de Camion (OCP) y Auto (LSP).
  */
 public class VehiculoPrinter {
 
     /**
      * Imprime los detalles de un vehículo en la consola.
      * Si el vehículo es un Camion, imprime también si tiene acoplado.
+     * Si el vehículo es un Auto, imprime también la cantidad de pasajeros.
      *
-     * @param vehiculo El Vehiculo (o subclase como Camion) cuya información se va a imprimir.
+     * @param vehiculo El Vehiculo (o subclase como Camion, Auto) cuya información se va a imprimir.
      */
     public void imprimirVehiculo(Vehiculo vehiculo) {
         if (vehiculo == null) {
@@ -28,9 +29,13 @@ public class VehiculoPrinter {
 
         // Verifica si es un Camion para imprimir información específica (OCP)
         if (vehiculo instanceof Camion) {
-            // Hacemos un cast seguro porque ya comprobamos el tipo
-            Camion camion = (Camion) vehiculo;
+            Camion camion = (Camion) vehiculo; // Cast seguro
             System.out.println("Tiene Acoplado: " + (camion.isTieneAcoplado() ? "Sí" : "No"));
+        }
+        // Verifica si es un Auto para imprimir información específica (LSP)
+        else if (vehiculo instanceof Auto) { // Usamos else if para evitar imprimir ambos si hubiera herencia múltiple (no es el caso aquí)
+            Auto auto = (Auto) vehiculo; // Cast seguro
+            System.out.println("Cantidad de Pasajeros: " + auto.getCantidadPasajeros());
         }
 
         System.out.println("-------------------------------------");
