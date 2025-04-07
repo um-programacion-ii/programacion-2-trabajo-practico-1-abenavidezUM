@@ -6,7 +6,7 @@ package com.gestionvehiculos;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Iniciando sistema de gestión de vehículos...");
+        System.out.println("Iniciando sistema de gestión de vehículos (Etapa 2 - SRP)...");
 
         try {
             // Crear al menos 3 vehículos
@@ -22,10 +22,13 @@ public class Main {
 
             System.out.println("\nVehículos creados exitosamente:");
 
-            // Imprimir información de los vehículos usando el método mostrarInformacion()
-            vehiculo1.mostrarInformacion();
-            vehiculo2.mostrarInformacion();
-            vehiculo3.mostrarInformacion();
+            // Crear una instancia de VehiculoPrinter
+            VehiculoPrinter printer = new VehiculoPrinter();
+
+            // Imprimir información de los vehículos usando VehiculoPrinter
+            printer.imprimirVehiculo(vehiculo1);
+            printer.imprimirVehiculo(vehiculo2);
+            printer.imprimirVehiculo(vehiculo3);
 
         } catch (IllegalArgumentException e) {
             System.err.println("\nError al crear un vehículo: " + e.getMessage());

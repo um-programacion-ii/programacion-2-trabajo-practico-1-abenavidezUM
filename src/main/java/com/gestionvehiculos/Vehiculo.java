@@ -117,12 +117,12 @@ public class Vehiculo {
      * Muestra la información completa del vehículo en la consola.
      * Este método será eliminado en etapas posteriores para cumplir con SRP.
      */
-    public void mostrarInformacion() {
-        System.out.println("--- Información del Vehículo ---");
-        System.out.println("Patente: " + patente);
-        System.out.println("Marca: " + marca);
-        System.out.println("Año: " + anio);
-        System.out.println("Capacidad de Carga (Kg): " + capacidadCargaKg);
-        System.out.println("---------------------------------");
-    }
+    // public void mostrarInformacion() {  <-- ELIMINADO
+    //     System.out.println("--- Información del Vehículo ---"); <-- ELIMINADO
+    //     System.out.println("Patente: " + patente); <-- ELIMINADO
+    //     System.out.println("Marca: " + marca); <-- ELIMINADO
+    //     System.out.println("Año: " + anio); <-- ELIMINADO
+    //     System.out.println("Capacidad de Carga (Kg): " + capacidadCargaKg); <-- ELIMINADO
+    //     System.out.println("---------------------------------"); <-- ELIMINADO
+    // } <-- ELIMINADO
 } 
